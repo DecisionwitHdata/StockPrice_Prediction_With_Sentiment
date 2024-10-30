@@ -1,22 +1,26 @@
 # Stock Market Prediction Project
 
-This project aims to predict stock price movements by analyzing price data and sentiment data from Twitter. We leveraged FinBERT, a financial-domain-specific NLP model, to evaluate if public sentiment influences stock trends.
+This project aims to predict stock price movements by analyzing historical price data and sentiment data extracted from Twitter. 
+We leveraged FinBERT, a financial domain-specific NLP model, to evaluate if public sentiment influences stock trends.
 
 ## Project Overview
 
-Using data from **StockNet** and Twitter, this project combines daily stock prices with sentiment analysis to predict stock movements. The project examines models trained on price data alone and in combination with sentiment data.
+Using data from **StockNet** and Twitter, this project combines daily stock prices with sentiment analysis to predict stock movements. 
+The project examines models trained on price data alone and in combination with sentiment data.
 
 ## Data
 
 ### 1. Stock Price Data
-We used stock price data from StockNet, covering 88 companies in sectors like Consumer Goods and Healthcare, spanning January 1, 2014, to January 1, 2016. The data includes columns for date, open, high, low, close, adjusted close, and volume.
+We used stock price data from StockNet, covering 88 companies in sectors like Consumer Goods and Healthcare, spanning January 1, 2014, to January 1, 2016. 
+The data includes columns for date, open, high, low, close, adjusted close, and volume.
 
 ### 2. Sentiment Data
 Twitter data was retrieved using NASDAQ ticker symbols (e.g., `$GOOG` for Google). Sentiment analysis was conducted using FinBERT, which labeled each tweet as positive, neutral, or negative. Missing sentiment scores were filled with a neutral score (0.333 each for positive, neutral, and negative).
 
 ## Model Description
 
-We used FinBERT for sentiment analysis, which showed superior performance over general models on financial text tasks. For price movement prediction, we trained baseline RNN and LSTM models on price data alone, and then tested hybrid models combining price and sentiment data.
+We used FinBERT for sentiment analysis, which performed better than general models on financial text tasks. 
+For price movement prediction, we trained baseline RNN and LSTM models on price data alone, and then tested hybrid models combining price and sentiment data.
 
 ## Experiment Setup
 
