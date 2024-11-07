@@ -36,20 +36,19 @@ For price movement prediction, we trained baseline RNN and LSTM models on price 
 
 Below is the architecture diagram for the StockRNN + Senti model:
 
-![StockRNN + Senti](image/StockRNN_Senti.jpg)
-![StockRNN+SentiRNN](image/StockRNN_SentiRNN.jpg)
-
+<img src="image/StockRNN_Senti.jpg" alt="StockRNN + Senti" width="800">
+<img src="image/StockRNN_SentiRNN.jpg" alt="StockRNN+SentiRNN" width="800">
 
 All models used the following parameters: batch size = 32, window size = 5, epochs = 120, hidden size = 32, layers = 1, learning rate = 0.001.
 
 ## Results
 
-| Model                | Accuracy  | MCC     |
-|----------------------|-----------|---------|
-| BaseRNN              | 0.5128    | 0.0339  |
-| BaseLSTM             | 0.5153    | 0.0379  |
-| StockRNN + Sentiment | 0.5195    | 0.0503  |
-| StockRNN + SentiRNN  | 0.5153    | 0.0511  |
+| Model                | MCC     |
+|----------------------|---------|
+| BaseRNN              | 0.0339  |
+| BaseLSTM             | 0.0379  |
+| StockRNN + Sentiment | 0.0503  |
+| StockRNN + SentiRNN  | 0.0511  |
 
 The results indicate that sentiment data slightly improved the MCC for certain models, but did not consistently enhance overall accuracy. 
 
