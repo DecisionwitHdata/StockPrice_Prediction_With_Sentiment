@@ -36,8 +36,8 @@ For price movement prediction, we trained baseline RNN and LSTM models on price 
 
 Below is the architecture diagram for the StockRNN + Senti model:
 
-![StockRNN + Senti](StockPrice_Prediction_With_Sentiment/image/StockRNN+Senti.jpg)
-![StockRNN+SentiRNN](StockPrice_Prediction_With_Sentiment/image//StockRNN+SentiRNN.jpg)
+![StockRNN + Senti](image/StockRNN_Senti.jpg)
+![StockRNN+SentiRNN](image/StockRNN_SentiRNN.jpg)
 
 
 All models used the following parameters: batch size = 32, window size = 5, epochs = 120, hidden size = 32, layers = 1, learning rate = 0.001.
