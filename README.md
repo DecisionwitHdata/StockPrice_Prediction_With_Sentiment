@@ -63,11 +63,22 @@ The results indicate that sentiment data slightly improved the MCC for certain m
 ## Repository Structure
 
 ```plaintext
-StockPrediction/
+StockPrice_Prediction_With_Sentiment/
+├── Code/
+│   ├── Baseline_models.ipynb     # Base RNN/LSTM models without sentiment
+│   ├── Main.ipynb               # Main experiment notebook
+│   ├── Sentiment_Analysis_Preprocessing.py  # Sentiment analysis code
+│   └── Stock_Data_Preprocessing.py          # Stock data preprocessing
 │
-├── README.md                    # Project overview and instructions
-├── data/
-│   ├── processed/               # Preprocessed stock and sentiment data
-│   └── results/                 # Model results
-├── code/                        # Code files and Jupyter notebooks
-├── requirements.txt             # Python dependencies
+├── Data/
+│   ├── processed/               # Preprocessed data files
+│   └── results/                 # Model results and evaluations
+│
+├── Experiments/
+│   ├── AAPL_Sentiment.py        # Apple stock sentiment analysis
+│   ├── AAPL_Stock_Prediction.py # Apple stock prediction models
+│   ├── FB_GOOG_MSF.py          # Facebook, Google, Microsoft models
+│   └── image/                   # Visualizations and plots
+│
+├── README.md                    # Project documentation
+└── requirements.txt             # Project dependencies
